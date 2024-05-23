@@ -5,7 +5,6 @@
 
 using namespace std;
 
-//global variable declaration
 int k = 7, r = 0, flag = 0;
 COORD coord = {0, 0};
 
@@ -17,7 +16,6 @@ void gotoxy(int x, int y)
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
 }
 
-// function for drawing line
 void drawlines(int lengthOfLine)
 {
     for (int i = 0; i < lengthOfLine; i++)
@@ -144,10 +142,9 @@ void amount::report()
         cout << "PRICE";
     }
 }
-//amount //
+
 void amount::pay()
 {
-    // show();
     cout << "\n\n\n\t\t*********************************************";
     cout << "\n\t\t                 DETAILS                  ";
     cout << "\n\t\t*********************************************";
